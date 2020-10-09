@@ -1,0 +1,26 @@
+body {
+  background-color: cornflowerblue;
+  text-align: center;
+}
+
+
+#stage {
+  display: inline-block;
+  height: 600px;
+  width: 600px;
+  margin: 40px;
+  background-image: url(/css_animation_exercise_stage.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: contain;
+  border: black 1px solid;
+}
+
+#hero {
+  height: 70px;
+  width: 70px;
+  border: tomato 2px dashed;
+  position: relative;
+  left: 20px;
+  top: 20px;
+}
