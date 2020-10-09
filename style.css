@@ -17,10 +17,17 @@ body {
 }
 
 #hero {
-  height: 70px;
-  width: 70px;
-  border: tomato 2px dashed;
+  height: 75px;
+  width: 75px;
+  border: red 1px dashed;
   position: relative;
-  left: 20px;
-  top: 20px;
+  left: 10px;
+  top: 10px;
+  animation-name: stepOne;
+  animation-duration: 5s;
+}
+
+@keyframes stepOne {
+  from {left: 10px; top: 10px;}
+  to {left: 510px; top: 10px;}
 }
