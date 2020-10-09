@@ -23,11 +23,17 @@ body {
   position: relative;
   left: 10px;
   top: 10px;
+  
   animation-name: stepOne;
-  animation-duration: 5s;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
 }
 
 @keyframes stepOne {
-  from {left: 10px; top: 10px;}
-  to {left: 510px; top: 10px;}
+  /* Step One */
+  0% {left: 10px; top: 10px;}
+  69% {left: 510px; top: 10px;}
+  72% {left: 510px; top: 10px;}
+  100% {left: 10px; top: 10px;}
+  /* Step Three */
 }
