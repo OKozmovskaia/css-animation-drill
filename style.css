@@ -24,16 +24,62 @@ body {
   left: 10px;
   top: 10px;
   
-  animation-name: stepOne;
-  animation-duration: 7s;
+  animation-name: animation;
+  animation-duration: 17s;
   animation-iteration-count: infinite;
 }
 
-@keyframes stepOne {
-  /* Step One */
-  0% {left: 10px; top: 10px;}
-  69% {left: 510px; top: 10px;}
-  72% {left: 510px; top: 10px;}
-  100% {left: 10px; top: 10px;}
-  /* Step Three */
+@keyframes animation {
+  from {
+    left: 10px; top: 10px;
+    transform: rotate(0deg);
+    border: 1px red dashed;
+    border-radius: 0%;
+    background-image: none;
+  }
+  29% {
+    left: 510px; top: 10px;
+    transform: rotate(0deg);
+    border: 1px red dashed;
+    border-radius: 0%;
+    background-image: none;
+  }
+  41% {
+    left: 510px; top: 230px;
+    transform: rotate(0deg);
+    border: 1px red dashed;
+    border-radius: 0%;
+    background-image: none;
+  }
+  /* Rotation */
+  44% {
+    left: 255px; top: 230px;
+    transform: rotate(45deg);
+    border: 1px red dashed;
+    border-radius: 0%;
+    background-image: none;
+  }
+  56% {
+    left: 255px; top: 230px;
+    transform: rotate(45deg);
+    border: 1px red dashed;
+    border-radius: 0%;
+    background-image: none;
+  }
+  /* Change border and rotation back */
+  71% {
+    left: 10px; top: 230px;
+    transform: rotate(0deg);
+    border: 1px #0900BD dashed;
+    border-radius: 0%;
+    background-image: none;
+  }
+  /* Scale and transform */
+  to {
+    left: 460px; top: 460px;
+    transform: scale(2);
+    border-radius: 50%;
+    border: 1px solid #F76B1C;
+    background-image: radial-gradient(circle, #FBDA61, #F76B1C)
+  }
 }
